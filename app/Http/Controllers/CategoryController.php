@@ -46,9 +46,7 @@ final class CategoryController
     {
         $category->load('recipes');
 
-        return view('categories.show', [
-            'category' => $category,
-        ]);
+        return view('categories.show', compact('category'));
     }
 
     /**
@@ -56,9 +54,7 @@ final class CategoryController
      */
     public function edit(Category $category): View
     {
-        return view('categories.edit', [
-            'category' => $category,
-        ]);
+        return view('categories.edit', compact('category'));
     }
 
     /**
