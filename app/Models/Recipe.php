@@ -41,8 +41,12 @@ final class Recipe extends Model
             'recipe_ingredient',
             'recipe_id',
             'ingredient_id'
-        )->using(RecipeIngredient::class)
-            ->withPivot('quantity', 'description');
+        )
+            ->using(RecipeIngredient::class)
+            ->withPivot([
+                'quantity',
+                'description',
+            ]);
     }
 
     /**
