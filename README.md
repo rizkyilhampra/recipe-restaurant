@@ -1,3 +1,6 @@
+> [!WARNING]
+> Currently, i still have not convenient in tailwind and popular frontend javascript framework. 2 Days is not enough to learn by doing. So this just html css only!
+
 ## ERD
 ![erd](./erd.png) 
 
@@ -14,7 +17,7 @@ cp .env.example .env
 php artisan key:generate
 php artisan migrate:fresh --seed
 npm install
-composer run dev
+php artisan serve
 ```
 
 ## Docker (Through Sail)
@@ -42,7 +45,6 @@ cp .env.example .env
 ./vendor/bin/sail artisan key:generate
 ./vendor/bin/sail artisan migrate:fresh --seed
 ./vendor/bin/sail npm install
-./vendor/bin/sail npm run dev
 ```
 
 ## Test
