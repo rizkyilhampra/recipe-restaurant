@@ -1,4 +1,5 @@
-# Laravel React through Inertia.js
+## ERD
+![erd](./erd.png) 
 
 ## PHP built-in server
 
