@@ -16,7 +16,6 @@ composer install
 cp .env.example .env
 php artisan key:generate
 php artisan migrate:fresh --seed
-npm install
 php artisan serve
 ```
 
@@ -44,7 +43,6 @@ composer install || docker run --rm \
 cp .env.example .env
 ./vendor/bin/sail artisan key:generate
 ./vendor/bin/sail artisan migrate:fresh --seed
-./vendor/bin/sail npm install
 ```
 
 ## Test
