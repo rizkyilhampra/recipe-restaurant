@@ -13,7 +13,7 @@ class CategorySeeder extends Seeder
     public function run(): void
     {
         collect([
-            'main course'
+            'main course',
         ])->each(fn (string $name) => Category::factory()->create(['name' => $name]));
     }
 }

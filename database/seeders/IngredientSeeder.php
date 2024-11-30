@@ -20,7 +20,7 @@ class IngredientSeeder extends Seeder
             'bawang putih',
             'ayam',
             'sayur cesim',
-            'kecap'
+            'kecap',
         ])->each(fn ($ingredient) => Ingredient::factory()->create(['name' => $ingredient]));
     }
 }

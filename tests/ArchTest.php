@@ -6,14 +6,14 @@ arch()->preset()->laravel();
 arch('strict types')
     ->expect([
         'App\Models',
-        'App\Controllers'
+        'App\Controllers',
     ])
     ->toUseStrictTypes();
 
 arch('avoid open for extension')
     ->expect([
         'App\Models',
-        'App\Controllers'
+        'App\Controllers',
     ])
     ->classes()
     ->toBeFinal()
@@ -24,7 +24,6 @@ arch('ensure no extends')
     ->classes()
     ->not->toBeAbstract()
     ->ignoring([]);
-
 
 arch('avoid inheritance')
     ->expect('App')
