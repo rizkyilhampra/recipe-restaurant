@@ -55,10 +55,8 @@ composer run test
 
 or with Sail
 
-> One line command
+> Ensure the container is running, by running `./vendor/bin/sail up -d`
 
 ```bash
-./vendor/bin/sail bin pint --test && \
-./vendor/bin/sail bin phpstan analyse --memory-limit=1G && \
-./vendor/bin/sail bin pest
+composer run sail-test
 ```
