@@ -2,6 +2,9 @@
 
 @section('content')
     <h1>Categories</h1>
+
+    <a href="{{ route('ingredients.create') }}">Create Category</a>
+
     <table>
         <thead>
             <tr>
