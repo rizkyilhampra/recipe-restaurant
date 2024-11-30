@@ -65,6 +65,14 @@
             "@test:lint",
             "@test:types",
             "@test:unit"
+        ],
+        "sail-test:lint": "sail bin pint --test",
+        "sail-test:types": "sail bin phpstan analyse",
+        "sail-test:unit": "sail pest",
+        "sail-test": [
+            "@sail-test:lint",
+            "@sail-test:types",
+            "@sail-test:unit"
         ]
     },
     "extra": {
