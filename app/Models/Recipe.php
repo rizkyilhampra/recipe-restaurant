@@ -51,8 +51,6 @@ final class Recipe extends Model
 
     /**
      * Define an accessor for the "name" attribute.
-     *
-     * @return Attribute<string>
      */
     protected function name(): Attribute
     {

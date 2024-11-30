@@ -35,8 +35,6 @@ final class Category extends Model
 
     /**
      * Define an accessor for the "name" attribute.
-     *
-     * @return Attribute<string>
      */
     protected function name(): Attribute
     {
