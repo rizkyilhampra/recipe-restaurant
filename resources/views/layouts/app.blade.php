@@ -60,6 +60,7 @@
 <body>
     <div class="container">
         <div class="nav">
+            <a href="{{ route('recipes.index') }}">Recipe</a>
             <a href="{{ route('categories.index') }}">Category</a>
             <a href="{{ route('ingredients.index') }}">Ingredient</a>
         </div>
